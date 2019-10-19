@@ -1,0 +1,24 @@
+Code for Good: United Way of San Antonio – Team 8
+Team 8: Thang, Jeffrey, Yashas, Osman, and Rohit
+
+For our data visualization, we chose to program our demo purely in Python because of python supports pyplot. 
+Pyplot is a matlab library that allows us to graph data in numerous ways including bar graphs, line graphs, 
+and with some tweaking, even histograms. To showcase our demo, we will be using Colab of Google because it 
+can display static graph outputs of our data. In order to visualize whether the outcome met the annual target
+expectations, we devised 2 methods of doing this. The first was to sum up all the discrete values of the 
+12-month period and directly comparing it to the target. This method clearly shows if the goal was met. 
+Our other method of showing whether the strategy and program name will make the target involves ARIMA. 
+ARIMA is a statistical model that can be implemented in Python for timeseries forecasting. This model is 
+useful for when we have less than a year’s worth of data and we want to predict the likelihood of the strategy 
+and program meeting the target.
+
+Before setting out to do so, we considered using tableau and chart.js to format our data for visualization. 
+However, we ran into problems. Using tableau, we had problems adding in extra data because we do not have the 
+full version of the software. While using chart.js, we failed to extract data from the local excel spread sheet
+to make our graphs. These are some of the other solutions we considered before deciding on Python. 
+
+In a retrospect, our program could be dynamic if we continue to call the create graph function with the addition 
+of new data sets and modification of parameters. As of now, we only have static graph instances that can be generated 
+from the local data United Way has provided us. Given more time to carry out our idea, we could develop a front end with 
+React that calls the python script to plot the graphs requested by the users especially because these plots can be 
+formatted as PNG’s. 
